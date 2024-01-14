@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Product-Catalogue
+spec:
+  selector:
+    matchLabels:
+      app: Product-Catalogue
+  template:
+    metadata:
+      labels:
+        app: Product-Catalogue
+    spec:
+      containers:
+        - name: service
+          image: gcr.io/google-samples/microservices-demo/productcatalogservice
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 3550
+          env:
+            - name: PORT
+              value: "3550"
