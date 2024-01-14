@@ -1,0 +1,25 @@
+images:
+- name: gcr.io/google-samples/microservices-demo/adservice
+  newName: adservice
+- name: gcr.io/google-samples/microservices-demo/cartservice
+  newName: cartservice
+- name: gcr.io/google-samples/microservices-demo/checkoutservice
+  newName: checkoutservice
+- name: gcr.io/google-samples/microservices-demo/currencyservice
+  newName: CONTAINER_IMAGES_REGISTRY/currencyservice
+- name: gcr.io/google-samples/microservices-demo/emailservice
+  newName: CONTAINER_IMAGES_REGISTRY/emailservice
+- name: gcr.io/google-samples/microservices-demo/frontend
+  newName: CONTAINER_IMAGES_REGISTRY/frontend
+- name: gcr.io/google-samples/microservices-demo/loadgenerator
+  newName: CONTAINER_IMAGES_REGISTRY/loadgenerator
+- name: gcr.io/google-samples/microservices-demo/paymentservice
+  newName: CONTAINER_IMAGES_REGISTRY/paymentservice
+- name: gcr.io/google-samples/microservices-demo/productcatalogservice
+  newName: CONTAINER_IMAGES_REGISTRY/productcatalogservice
+- name: gcr.io/google-samples/microservices-demo/recommendationservice
+  newName: CONTAINER_IMAGES_REGISTRY/recommendationservice
+- name: gcr.io/google-samples/microservices-demo/shippingservice
+  newName: CONTAINER_IMAGES_REGISTRY/shippingservice
+- name: redis
+  newName: CONTAINER_IMAGES_REGISTRY/redis
