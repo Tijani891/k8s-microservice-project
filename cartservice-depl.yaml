@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cartservice
+spec:
+  selector:
+    matchLabels:
+      app: cartservice
+  template:
+    metadata:
+      labels:
+        app: cartservice
+    spec:
+      containers:
+        - name: service
+          image: gcr.io/google-samples/microservices-demo/cartservice
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 7070
+          env:
+            - name: PORT
+              value: "7070"
+            - name: REDIS_ADDR
+              value: "redis:6379"
