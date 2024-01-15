@@ -9,7 +9,7 @@ spec:
   template:
     metadata:
       labels:
-        app: adservice
+        app: currencyservice
     spec:
       containers:
         - name: service
